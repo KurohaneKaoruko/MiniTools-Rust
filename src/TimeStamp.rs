@@ -14,7 +14,7 @@ fn time_get() -> (i64, i64, i64, i64, String, String, String, String, String, St
     let mt_hex = format!("{:X}", mt);
     let ht_hex = format!("{:X}", ht);
     let dt_hex = format!("{:X}", dt);
-    let time_str = t.format("%Y-%m-%d %H:%M:%S +08:00").to_string();
+    let time_str = t.format("%Y-%m-%d %H:%M:%S").to_string();
 
     (st, mt, ht, dt, st_bin, mt_bin, ht_bin, dt_bin, st_hex, mt_hex, ht_hex, dt_hex, time_str)
 }
